@@ -14,13 +14,13 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Lab 6 SDP"),
+        title: Text("Lab 7"),
         centerTitle: true,
         backgroundColor: Colors.blueAccent,
       ),
       body: Center(
         // child: Image(
-        //   image: AssetImage("images/snap.jfif"),
+        //   image: AssetImage("images/snap.jpg"),
         // ),
         // child: Icon(
         //     Icons.account_circle_sharp,
@@ -30,7 +30,7 @@ class HomeScreen extends StatelessWidget {
         //       child: Text('Vashishth Patel'),
         //       onPressed: () {},
         //       style: ElevatedButton.styleFrom(
-        //         primary: Colors.orange[500],
+        //         primary: Colors.red[500],
         //         padding: EdgeInsets.symmetric(horizontal: 50, vertical: 20),
         //         textStyle: TextStyle(
         //             fontFamily: "Monaco",
@@ -48,38 +48,38 @@ class HomeScreen extends StatelessWidget {
         //     onPressed: () {},
         //     tooltip: "Send an E-mail",
         //   ),
-        //   child: Directionality(
-        //     textDirection: TextDirection.rtl,
-        //     child: TextButton.icon(
-        //       onPressed: () {},
-        //       style: ButtonStyle(
-        //         backgroundColor: MaterialStateProperty.all(Colors.redAccent),
-        //       ),
-        //       icon: Icon(
-        //         Icons.notifications_active,
-        //         color: Colors.white,
-        //         size: 24.0,
-        //       ),
-        //       label: Text(
-        //         "Subscribe",
-        //         style: TextStyle(
-        //           fontSize: 18.0,
-        //           color: Colors.white,
-        //         ),
-        //       ),
-        //     ),
+          child: Directionality(
+            textDirection: TextDirection.rtl,
+            child: TextButton.icon(
+              onPressed: () {},
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(Colors.redAccent),
+              ),
+              icon: Icon(
+                Icons.notifications_active,
+                color: Colors.white,
+                size: 24.0,
+              ),
+              label: Text(
+                "Subscribe",
+                style: TextStyle(
+                  fontSize: 18.0,
+                  color: Colors.white,
+                ),
+              ),
+            ),
+          ),
+        //   child: FlatButton(
+        //     onPressed: () {},
+        //     child: Text("Click Here"),
+        //     color: Colors.orange,
         //   ),
-        child: FlatButton(
-          onPressed: () {},
-          child: Text("Click Here"),
-          color: Colors.orange,
+        // ),
+        // floatingActionButton: FloatingActionButton(
+        //   onPressed: () {},
+        //   backgroundColor: Colors.orange,
+        //   child: Text("Click"),
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        backgroundColor: Colors.orange,
-        child: Text("Click"),
-      ),
-    );
+      );
+    }
   }
-}
